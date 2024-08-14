@@ -40,5 +40,16 @@ puts file.read
 file.close()
 
 # edit file
+File.open("texts/ex1.txt", "a") do |file|
+  file.write("\nGo Go JoJo!!")
+end
 
-File.open("texts/ex1.txt", )
+# write file
+File.open("texts/jojo.txt", "w") do |file|
+  file.write("Go Go JoJo !")
+end
+
+# write html
+File.open("texts/index.html", "w") do |file|
+  file.write("<h1>JOJO steel ball run</h1>")
+end
