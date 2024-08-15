@@ -14,4 +14,10 @@ class Cart
   def delete_item
     @items.pop
   end
+
+  def validate
+    @items.each do |item|
+      puts "item has no price" if item.price.nil?
+    end
+  end
 end
