@@ -20,4 +20,9 @@ class Cart
       puts "item has no price" if item.price.nil?
     end
   end
+
+  def delete_invalid_items
+    @items.delete_if { |i| i.price.nil? }
+  end
+
 end

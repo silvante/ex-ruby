@@ -9,7 +9,8 @@ cart.add_item(Item.new)
 cart.validate
 
 # deleting items
-cart.delete_item()
+# cart.delete_item()
+cart.delete_invalid_items
 
 
 p cart
