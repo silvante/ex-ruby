@@ -23,4 +23,16 @@ class Item
       puts "noting to show"
     end
   end
+
+  def self.discount
+    if Time.now.month == 8
+      0.4
+    else
+      0.1
+    end
+  end
+
+  def price
+    @price - @price * self.class.discount
+  end
 end
